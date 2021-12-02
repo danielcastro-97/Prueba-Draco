@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Cubo de Rubik</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-auto-animate data-background-image="img/Rubiks_cube_solved.svg" data-background-size="100px" data-background-repeat="repeat">
+					<p data-id="text-props" style="background: black; line-height: 1em; letter-spacing: 0em;">Cubo de Rubik</p>
+				</section>
+				<section data-auto-animate data-background-image="img/Rubiks_cube.svg" data-background-size="100px" data-background-repeat="repeat">
+					<p data-id="text-props" style="background: black; line-height: 3em; letter-spacing: 0.2em;">Cubo de Rubik</p>
+				</section>
+
+				<section>
+					<h2>Información</h2>
+					<div class="r-stack">
+						<div class="fragment fade-in-then-out">
+							<div class="r-hstack">
+								<p style="padding: 0.50em; background: #eee; margin: 0.25em">El Cubo de Rubik es un rompecabezas mecánico tridimensional creado por el escultor y profesor de arquitectura húngaro Ernő Rubik en 1974.</p>
+								<p style="padding: 0.75em; margin: 0.25em"><img src="img/Erno_Rubik.jpg" alt="Profesor Ernő Rubik"></p>
+							</div>
+						</div>
+						<div class="fragment fade-in-then-out">
+							<div class="r-hstack">
+								<p style="padding: 0.75em; margin: 0.25em"><img src="img/Rubiks_cube_solved.svg" alt="Cubo de Rubik con una cara girada"></p>
+								<p style="padding: 0.50em; background: #eee; margin: 0.25em">Originalmente llamado «cubo mágico», el rompecabezas fue licenciado por Rubik para ser vendido por Ideal Toy Company en 1980</p>
+							</div>
+						</div>
+						<div class="fragment fade-in-then-out">
+							<div class="r-hstack">
+								<p style="padding: 0.50em; background: #eee; margin: 0.25em">Un cubo de Rubik clásico posee seis colores uniformes (tradicionalmente blanco, rojo, azul, naranja, verde y amarillo).</p>
+								<p style="padding: 0.75em; margin: 0.25em"><img src="img/Rubiks_cube.jpg" alt="Cubo de Rubik desecho"></p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section>
+					<h3>Matemática</h3>			
+					<p>El cubo de Rubik original (3×3×3) tiene ocho vértices y doce aristas.</p>
+					<div class="r-stack">
+						<p class="fragment fade-in-then-out">Hay 8 ! (40 320) formas de combinar los vértices del cubo.</p>
+						<p class="fragment fade-in-then-out">Siete de estas pueden orientarse independientemente y la orientación de la octava dependerá de las siete anteriores, dando 3^7 (2187) posibilidades.</p>
+						<p class="fragment fade-in-then-out">A su vez hay 12!/2  (239 500 800) formas de disponer las aristas, dado que una paridad de las esquinas implica asimismo una paridad de las aristas.</p>
+						<p class="fragment fade-in-then-out">Once aristas pueden ser volteadas independientemente y la rotación de la duodécima dependerá de las anteriores, dando 2^11 (2048) posibilidades.</p>
+						<p class="fragment fade-in-then-out">En total el número de permutaciones posibles en el cubo de Rubik es de: </p>
+						<div class="fragment">
+							\[ \frac{8! · 12! · 3^{7} · 2^{11}  }{2} = 43. 252. 003. 274. 489. 856. 000 \]
+							<p>Es decir, cuarenta y tres trillones doscientos cincuenta y dos mil tres billones doscientos setenta y cuatro mil cuatrocientos ochenta y nueve millones ochocientos cincuenta y seis mil permutaciones.</p>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<section> <h1>Otras versiones</h1></section>
+					<section>
+						<h3>Cubo de bolsillo</h3>
+						<div class="r-hstack">
+							<p style="padding: 0.50em; background: #eee; margin: 0.25em">Aunque mecánicamente es más complejo que el Cubo de Rubik, su resolución es mucho más sencilla, ya que es análoga a reordenar únicamente los vértices de un cubo de Rubik estándar 3x3x3. </p>
+							<p><img src="img/cubo-de-rubik-2x2-comprar-2.jpg" alt="Cubo 2x2x2"></p>
+						</div>
+					</section>
+					<section>
+						<h3>Venganza de Rubik</h3>
+						<div class="r-hstack">
+							<p style="padding: 0.50em; background: #eee; margin: 0.25em">Al contrario de lo que ocurre con el cubo original y con la versión 5x5x5; no posee piezas fijas: las caras centrales, divididas en cuatro piezas, pueden moverse a diferentes posiciones. </p>
+							<p><img src="img/4x4.jpg" alt="Cubo 4x4x4"></p>
+						</div>
+					</section>
+					<section>
+						<h3>Cubo del Profesor</h3>
+						<div class="r-hstack">
+							<p style="padding: 0.50em; background: #eee; margin: 0.25em">Es la versión de 5x5x5 del cubo de Rubik. Tiene características en común tanto con la versión original del cubo de 3x3x3 como con la versión de 4x4x4. </p>
+							<p><img src="img/5x5x5.jpg" alt="Cubo 5x5x5"></p>
+						</div>
+					</section>
+					<section>
+						<h3>Skewb</h3>
+						<div class="r-hstack">
+							<p style="padding: 0.50em; background: #eee; margin: 0.25em">el skewb está cortado por solo cuatro planos perpendiculares a las diagonales principales. Una rotación o movimiento consiste en rotar 120 grados cualquiera de estos semicubos.</p>
+							<p><img src="img/Skewb.jpg" alt="Cubo Skewb"></p>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h2>Ventas</h2>
+					<p>Hasta enero de 2009 se vendieron 350 millones de cubos en todo el mundo,​ convirtiéndolo no solo en el rompecabezas más vendido,​ sino que es considerado, en general, el juguete más vendido del mundo. </p>
+				</section>
+
+				<section data-background-image="img/Rubiks_cube_solved.svg" data-background-size="100px" data-background-repeat="repeat"><h1 style="background-color: black;">FIN</h1></section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
